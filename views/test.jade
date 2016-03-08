@@ -3,3 +3,7 @@ extends layout
 block content
 
     h1 Uploaded file
+    ul    
+        for file in theFiles
+            li #{file.filename} 
+                a(href="/deleteFile/#{file._id}") Delete file
