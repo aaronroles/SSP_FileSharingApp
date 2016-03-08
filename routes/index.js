@@ -12,7 +12,7 @@ router.get('/uploadFile', function(req, res, next){
 
 router.post('/uploadFile', function(req, res, next){
    // Uploaded file
-   console.log(req.files[0].originalName);
+   console.log(req.files[0].originalname);
    res.render('test'); 
 });
 
